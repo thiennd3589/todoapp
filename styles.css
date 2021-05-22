@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2193b0; /* fallback for old browsers */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    font-family: "Lato", sans-serif !important;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background-color: white;
+    width: 50%;
+    padding: 5%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 10px;
+}
+
+.add {
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+}
+
+#add-input {
+    font-size: 24px;
+    flex: 7;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(148, 148, 148);
+    outline: none !important;
+}
+
+.add-button {
+    border: none !important;
+    outline: none !important;
+    background-color: #0085fe;
+    padding: 10px;
+    margin-left: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-button i {
+    font-size: 24px;
+    color: white;
+}
+
+.tasks {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tasks .item {
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px dashed rgb(148, 148, 148);
+    justify-content: space-between;
+    font-size: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tasks .item .item-action {
+    border: none !important;
+    outline: none !important;
+    background-color: rgb(255, 64, 64);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.tasks .item .item-action i {
+    font-size: 20px;
+    color: white;
+}
