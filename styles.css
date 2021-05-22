@@ -72,6 +72,7 @@ body {
     font-size: 20px;
     align-items: center;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .tasks .item .item-action {
@@ -87,4 +88,8 @@ body {
 .tasks .item .item-action i {
     font-size: 20px;
     color: white;
+}
+
+.tasks .item.done .item-info {
+    text-decoration: line-through;
 }
